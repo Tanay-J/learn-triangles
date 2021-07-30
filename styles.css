@@ -1,6 +1,7 @@
 
 :root{
     --background: white;
+    --backgroud-light: white;
     --primary-color: lightblue;
     --primary-dark: #82A2AD;
     --text-light:lightblue;
@@ -62,6 +63,7 @@ button{
 .input-area{
     padding: 0.7rem;
     margin: 10px;
+    background-color: var(--backgroud-light);
 }
 .output-area{
 margin: 20px;
