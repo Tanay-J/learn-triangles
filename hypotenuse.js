@@ -6,7 +6,7 @@ input[1].addEventListener('keypress',(e) => {
     if(e.key == 'Enter'){
         
         let temp = (input[0].value*input[0].value)+(input[1].value*input[1].value);
-        let hypotenuse = Math.sqrt(temp);
+        let hypotenuse = Math.sqrt(temp).toFixed(1);
         outputArea.innerHTML = `Hypotenuse of the triangle is: <span class="sub-heading">${hypotenuse}</span>`;
     }
 })
