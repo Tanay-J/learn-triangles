@@ -8,7 +8,7 @@
     <title>Calculate Area</title>
 </head>
 <body>
-    <header>Learn Triangles</header>    
+    <header class="heading">Learn Triangles</header>    
     <section class="container nav-sec">
         <button class="nav-btn"><a class="link" href="area.html">Calculate Area of Triangle</a></button>
         <button class="nav-btn"><a class="link" href="hypotenuse.html">Calculate the Hypotenuse</a></button>
@@ -17,6 +17,23 @@
         <button class="nav-btn btn-selected"><a class="link" href="typeoftriangle.html">Guess the type of the triangle?</a></button>
     </section>
 
+    <section class="container main">
+        <h3 class="sub-heading">Guess the type of the triangle from given sides</h3>
+        <h4 id="firstSide"></h4>
+        <h4 id="secondSide"></h4>
+        <h4 id="thirdSide"></h4>
+        <img id="reload" src="/img/reload.svg">
+        <select class="input-area">
+            <option>Select</option>
+            <option value="not">Not a Triangle</option>
+            <option value="equi">Equilateral Triangle</option>
+            <option value="iso">Isosceles Triangle</option>
+            <option value="scal">Scalene Triangle</option>
+        </select>
+        <button id="checkBtn">Check</button>
+        <div class="output-area"></div>
+
+    </section>
     <script src="typeoftriangle.js"></script>
 </body>
 </html>
