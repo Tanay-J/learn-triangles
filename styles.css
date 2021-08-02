@@ -73,7 +73,6 @@ button{
     padding: 5px 10px;
     font-weight: 400;
     background-color: var(--primary-shade);
-    color: var(--btn-color);
     border-radius: 5px;
 }
 .main{
