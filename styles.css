@@ -20,6 +20,7 @@ body{
     font-size: 2rem;
     text-align: center;
     background-color: var(--primary-color); 
+    color: var(--background);
     font-weight: 800;  
     border: 3px solid var(--text-dark); 
 }
@@ -72,6 +73,7 @@ button{
     padding: 5px 10px;
     font-weight: 400;
     background-color: var(--primary-shade);
+    color: var(--btn-color);
     border-radius: 5px;
 }
 .main{
@@ -103,11 +105,8 @@ button{
 .footer{
     background-color: var(--primary-color);
     text-align: center;
-    margin: auto 10px;
+    margin: auto;
     border: 3px solid var(--text-dark);
-    
-    bottom:0;
-    /* width: 97%; */
 }
 .footer{
     text-align: center;
