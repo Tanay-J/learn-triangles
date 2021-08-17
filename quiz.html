@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <header class="heading"><a class="link" href="index.html">Learn About Triangles</a></header>    
+    <section class="container nav-sec">
+        <button class="nav-btn"><a class="link" href="area.html">Calculate Area of Triangle</a></button>
+        <button class="nav-btn"><a class="link" href="hypotenuse.html">Calculate the Hypotenuse</a></button>
+        <button class="nav-btn"><a class="link" href="isatriangle.html">Is it a triangle?  </a></button>
+        <button class="nav-btn"><a class="link" href="thirdangle.html">Guess the third angle?</a></button>
+        <button class="nav-btn btn-selected"><a class="link" href="quiz.html">Triangle Quiz</a></button>
+    </section>
+    <section class="container">
+        <div class="quiz">
+            <p class="question sub-heading"></p>
+            <div>
+                <input type="radio" class="input-radio"><label class="input-label sub-sub-heading"></label></input>
+                <input type="radio" class="input-radio"><label class="input-label sub-sub-heading"></label></input>
+                <input type="radio" class="input-radio"><label class="input-label sub-sub-heading"></label></input>
+                <input type="radio" class="input-radio"><label class="input-label sub-sub-heading"></label></input>
+            </div>
+            <p></p>            
+        </div>
+        <button id="btn">Next</button>
+        <div class="output-area"></div>
+    </section>
+    <script src="quiz.js"></script>
+</body>
+</html>
