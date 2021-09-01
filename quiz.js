@@ -64,12 +64,19 @@ let quizContent = [
 nextQue();
 
 function nextQue(){
-    if(counter == quizContent.length){
+    //if last question is displayed
+
+    if(counter == quizContent.length-1){
         nextBtn.textContent = 'Submit';
+    }
+    if(counter == quizContent.length){
         calculateScore();
         return;
     }
+    //displaying question
     que.textContent = quizContent[counter].Que;
+
+    //displaying options
     for(let i = 0;i < optionsArray.length;i++){
         optionsArray[i].value = quizContent[counter].Opts[i].charAt(0);
         labelArray[i].textContent = quizContent[counter].Opts[i];
@@ -94,21 +101,18 @@ function calculateScore(){
 }
 
 function setUserInput(){
-    let flag = false;
+    
     for(let i = 0;i < optionsArray.length;i++){
         if(optionsArray[i].checked){
             answerArray.push(optionsArray[i].value);
             optionsArray[i].checked = false;
-            flag = true;
-            break;
+            nextQue();
+            return;
         }
         if(i == optionsArray.length - 1){
             alert('All questions are mandatory');
-            return false;
+            return;
         }
-    }
-    if(flag){
-        nextQue();
     }
 
 }
