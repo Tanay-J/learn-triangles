@@ -36,7 +36,7 @@ let quizContent = [
             'c. 30 sq.units',
             'd. 40 sq.units'
         ],
-        Ans: 'd'
+        Ans: 'b'
     },
     {
         Que: '4. The angle measures of a triangle are 85°, 38° and 57°. What kind of triangle is it?',
