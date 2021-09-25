@@ -26,8 +26,9 @@ function displayNumbers(){
 }
 
 checkBtn.addEventListener('click', () => {
-    if(parseInt(thirdAngle.value)+angles[0]+angles[1] === 180){
-        
+    if(thirdAngle.value < 0){
+        outputArea.textContent = 'Invalid Input'
+    }else if(parseInt(thirdAngle.value)+angles[0]+angles[1] === 180){
         outputArea.textContent = 'You guessed it right!';
     }else outputArea.textContent = 'Oops! Try again';
 
